@@ -62,7 +62,7 @@ app.put('/recipe/:id', async (req, res) => {
     try {
         let recipe = await Recipe.findByIdAndUpdate(req.params.id, req.body);
         if (!recipe) return res.status(404).json({ error: 'Recipe not found' });
-        res.json({ Message: "Product Updated successfully" , recipe: req.body });
+        res.json({ Message: "Product Updated successfully" , recipe });
     } catch (error) {
         res.status(400).json({ error: error.message });
     }
