@@ -26,13 +26,13 @@ The base URL for this API is: `https://kaz-recipes-app.onrender.com`
 
 ## API Endpoints 📡
 
-| Method | Endpoint      | Description              | Example Request                                  |
-| :----- | :------------ | :----------------------- | :----------------------------------------------- |
-| POST   | `/recipe`     | Create new recipe        | `POST https://kaz-recipes-app.onrender.com/recipe` |
-| GET    | `/recipes`    | Get all recipes          | `GET https://kaz-recipes-app.onrender.com/recipes` |
-| GET    | `/recipe/:id` | Get single recipe by ID  | `GET https://kaz-recipes-app.onrender.com/recipe/67d8ee64da02cc9c871311d3` |
-| PUT    | `/recipe/:id` | Update recipe by ID      | `PUT https://kaz-recipes-app.onrender.com/recipe/67d8ee64da02cc9c871311d3` |
-| DELETE | `/recipe/:id` | Delete recipe by ID      | `DELETE https://kaz-recipes-app.onrender.com/recipe/67d902cef2f4bd311c6eed12` |
+| Method | Endpoint      | Description              | Example Request                                                                                                                                |
+| :----- | :------------ | :----------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| POST   | `/recipe`     | Create new recipe        | [`POST https://kaz-recipes-app.onrender.com/recipe`](https://kaz-recipes-app.onrender.com/recipe)                                              |
+| GET    | `/recipes`    | Get all recipes          | [`GET https://kaz-recipes-app.onrender.com/recipes`](https://kaz-recipes-app.onrender.com/recipes)                                            |
+| GET    | `/recipe/:id` | Get single recipe by ID  | [`GET https://kaz-recipes-app.onrender.com/recipe/67d8ee64da02cc9c871311d3`](https://kaz-recipes-app.onrender.com/recipe/67d8ee64da02cc9c871311d3) |
+| PUT    | `/recipe/:id` | Update recipe by ID      | [`PUT https://kaz-recipes-app.onrender.com/recipe/67d8ee64da02cc9c871311d3`](https://kaz-recipes-app.onrender.com/recipe/67d8ee64da02cc9c871311d3) |
+| DELETE | `/recipe/:id` | Delete recipe by ID      | [`DELETE https://kaz-recipes-app.onrender.com/recipe/67d902cef2f4bd311c6eed12`](https://kaz-recipes-app.onrender.com/recipe/67d902cef2f4bd311c6eed12) |
 
 ## Usage
 
