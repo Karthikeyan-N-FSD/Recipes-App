@@ -49,7 +49,7 @@ app.get('/recipes', async (req, res) => {
 app.get('/recipe/:id', async (req, res) => {
     try {
         let recipe = await Recipe.findById(req.params.id);
-        if (!recipe) return res.status(404).json({ error: 'Recipe not found' });
+        if (!recipe) return res.status(404).json({ error: "Recipe not found" });
         res.json(recipe);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -61,7 +61,7 @@ app.get('/recipe/:id', async (req, res) => {
 app.put('/recipe/:id', async (req, res) => {
     try {
         let recipe = await Recipe.findByIdAndUpdate(req.params.id, req.body);
-        if (!recipe) return res.status(404).json({ error: 'Recipe not found' });
+        if (!recipe) return res.status(404).json({ error: "Recipe not found" });
         res.json({ Message: "Product Updated successfully" , recipe });
     } catch (error) {
         res.status(400).json({ error: error.message });
@@ -73,8 +73,8 @@ app.put('/recipe/:id', async (req, res) => {
 app.delete('/recipe/:id', async (req, res) => {
     try {
         const recipe = await Recipe.findByIdAndDelete(req.params.id);
-        if (!recipe) return res.status(404).json({ message: 'Recipe not found' });
-        res.json({ message: 'Recipe deleted successfully', recipe });
+        if (!recipe) return res.status(404).json({ message: "Recipe not found" });
+        res.json({ message: "Recipe deleted successfully", recipe });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
